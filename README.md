@@ -2,7 +2,7 @@
 
 This is a simple FastAPI service that extracts text from uploaded PDF files using **pdfplumber**.
 
-## 🚀 Features
+## Features
 - Upload any PDF file
 - Extracts text from all pages
 - Returns extracted text as JSON
@@ -10,7 +10,7 @@ This is a simple FastAPI service that extracts text from uploaded PDF files usin
 
 ---
 
-## 📌 Requirements
+## Requirements
 
 Install dependencies:
 
@@ -20,7 +20,7 @@ pip install fastapi uvicorn pdfplumber python-multipart
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 .
@@ -30,7 +30,7 @@ pip install fastapi uvicorn pdfplumber python-multipart
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. A PDF file is uploaded to the `/extract-text` endpoint.
 2. The API reads the file bytes.
@@ -39,7 +39,7 @@ pip install fastapi uvicorn pdfplumber python-multipart
 
 ---
 
-## 📝 API Endpoint
+##  API Endpoint
 
 ### **POST** `/extract-text`
 
@@ -55,7 +55,7 @@ pip install fastapi uvicorn pdfplumber python-multipart
 
 ---
 
-## 🧪 Example cURL
+## Example cURL
 
 ```bash
 curl -X POST "http://localhost:8000/extract-text"   -F "file=@document.pdf"
@@ -63,7 +63,7 @@ curl -X POST "http://localhost:8000/extract-text"   -F "file=@document.pdf"
 
 ---
 
-## ▶️ Running the Server
+## Running the Server
 
 Start FastAPI with Uvicorn:
 
@@ -108,5 +108,5 @@ async def extract_text(file: UploadFile = File(...)):
 
 ---
 
-## 📄 License
+## License
 This project is open-source and free to use.
